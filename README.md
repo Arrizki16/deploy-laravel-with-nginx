@@ -29,7 +29,7 @@ sudo apt-get install php8.0-curl
 Move to your laravel project location and make sure to change permission  
 ```
 cd /var/www/(your project location)
-chown -r www-data:www-data .
+chown -R www-data:www-data .
 ```
 **Install composer**
 ```
