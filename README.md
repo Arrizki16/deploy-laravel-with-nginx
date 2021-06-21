@@ -46,7 +46,7 @@ Actually, you only need to configure the APP and DB configurations. Different co
 ## Mysql  -> its optional
 
 ## Nginx
-**Making nginx configuration**
+**Making an nginx configuration**
 ```
 touch /etc/nginx/sites-available/example.conf
 sudo nano /etc/nginx/sites-available/example.conf
