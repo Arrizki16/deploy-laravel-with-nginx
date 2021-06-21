@@ -9,7 +9,7 @@
 * [**Some Errors**](#some-errors)
 
 ## PHP
-In this chapter i use php version 8.0 because my laravel project using php 8.0. So it's depending to your laravel project.  
+I use PHP version 8.0 in this chapter because my Laravel project uses PHP version 8.0.As a result, it is dependent on your Laravel project.
 **Add odrej/php PPA**  
 ```
 sudo add-apt-repository ppa:ondrej/php
@@ -26,7 +26,7 @@ sudo apt-get install php8.0-curl
 ```
   
 ## Composer
-Move to your laravel project location and make sure to change permission  
+Make your way to your Laravel project's location and change the permissions.  
 ```
 cd /var/www/(your project location)
 chown -R www-data:www-data .
@@ -41,7 +41,7 @@ composer install
 sudo nano /var/www/(your project location)/.env
 ```
 ![Untitled](https://user-images.githubusercontent.com/55046884/120185953-0c4b7f00-c23d-11eb-82bd-cd66bbe5fdc0.png)  
-Actually, you only need to configure the APP and DB configurations.Different configurations will be used for different projects.
+Actually, you only need to configure the APP and DB configurations. Different configurations will be used for different projects.
 
 ## Mysql  -> its optional
 
