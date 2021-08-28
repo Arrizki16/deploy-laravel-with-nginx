@@ -12,6 +12,7 @@
 I use PHP version 8.0 in this chapter because my Laravel project uses PHP version 8.0.As a result, it is dependent on your Laravel project.
 **Add odrej/php PPA**  
 ```
+sudo apt install  ca-certificates apt-transport-https software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 ```
