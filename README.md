@@ -1,12 +1,30 @@
 # deploy-laravel-with-nginx
 
 ## **CONTENTS**
+* [**PREREQUISITES**](#prerequisites)
 * [**PHP**](#php)
 * [**Composer**](#composer)
 * [**Application Environtment**](#application-environment)
 * [**Mysql**](#mysql)
 * [**Nginx**](#nginx)
 * [**Some Errors**](#some-errors)
+
+## PREREQUISITES
+install nginx
+```
+sudo apt-get install nginx
+```
+nginx firewall permission
+```
+sudo ufw enable
+sudo ufw allow 'Nginx HTTP'
+sudo ufw status
+```
+install mysql
+```
+sudo apt-get install mysql-server
+mysql_secure_installation
+```
 
 ## PHP
 I use PHP version 8.0 in this chapter because my Laravel project uses PHP version 8.0.As a result, it is dependent on your Laravel project.
@@ -35,6 +53,10 @@ chown -R www-data:www-data .
 **Install composer**
 ```
 composer install
+```
+**Upgrade composer**
+```
+
 ```
 
 ## Application Environment
