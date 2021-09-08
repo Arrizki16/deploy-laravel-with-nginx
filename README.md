@@ -66,7 +66,14 @@ sudo nano /var/www/(your project location)/.env
 ![Untitled](https://user-images.githubusercontent.com/55046884/120185953-0c4b7f00-c23d-11eb-82bd-cd66bbe5fdc0.png)  
 Actually, you only need to configure the APP and DB configurations. Different configurations will be used for different projects.
 
-## Mysql  -> its optional
+## Mysql
+```
+mysql -u root -p
+CREATE DATABASE testing;
+CREATE USER 'root'@'%' IDENTIFIED BY 'PASSWORD';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
 
 ## Nginx
 **Making an nginx configuration**
