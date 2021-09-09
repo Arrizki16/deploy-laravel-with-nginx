@@ -4,8 +4,8 @@
 * [**PREREQUISITES**](#prerequisites)
 * [**PHP**](#php)
 * [**Composer**](#composer)
-* [**Application Environtment**](#application-environment)
 * [**Mysql**](#mysql)
+* [**Application Environtment**](#application-environment)
 * [**Nginx**](#nginx)
 * [**Some Errors**](#some-errors)
 
@@ -26,7 +26,11 @@ install mysql
 sudo apt-get install mysql-server
 mysql_secure_installation
 ```
-
+cek mysql nginx
+```
+systemctl status nginx
+systemctl status mysql
+```
 ## PHP
 I use PHP version 8.0 in this chapter because my Laravel project uses PHP version 8.0.As a result, it is dependent on your Laravel project.
 **Add odrej/php PPA**  
@@ -59,14 +63,6 @@ composer install
 ```
 
 ```
-
-## Application Environment
-```
-sudo nano /var/www/(your project location)/.env
-```
-![Untitled](https://user-images.githubusercontent.com/55046884/120185953-0c4b7f00-c23d-11eb-82bd-cd66bbe5fdc0.png)  
-Actually, you only need to configure the APP and DB configurations. Different configurations will be used for different projects.
-
 ## Mysql
 ```
 mysql -u root -p
@@ -75,6 +71,12 @@ CREATE USER 'root'@'%' IDENTIFIED BY 'PASSWORD';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
+## Application Environment
+```
+sudo nano /var/www/(your project location)/.env
+```
+![Untitled](https://user-images.githubusercontent.com/55046884/120185953-0c4b7f00-c23d-11eb-82bd-cd66bbe5fdc0.png)  
+Actually, you only need to configure the APP and DB configurations. Different configurations will be used for different projects.
 
 ## Nginx
 **Making an nginx configuration**
