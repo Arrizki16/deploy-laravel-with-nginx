@@ -17,6 +17,7 @@ sudo apt-get install nginx
 nginx firewall permission
 ```
 sudo ufw enable
+sudo ufw allow ssh
 sudo ufw allow 'Nginx HTTP'
 sudo ufw status
 ```
