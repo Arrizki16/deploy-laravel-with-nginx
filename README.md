@@ -7,6 +7,7 @@
 * [**Mysql**](#mysql)
 * [**Application Environtment**](#application-environment)
 * [**Nginx**](#nginx)
+* [**SSL**](#ssl)
 * [**Some Errors**](#some-errors)
 
 ## PREREQUISITES
@@ -116,5 +117,7 @@ sudo ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/
 nginx -t
 systemctl reload nginx
 ```
+**SSL**  
+menggunakan letsencrypt  
 
 ## Some Errors
