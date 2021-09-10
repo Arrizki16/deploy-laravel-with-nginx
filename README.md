@@ -66,7 +66,9 @@ composer update
 ```
 **Upgrade composer**
 ```
-
+run which composer (output /usr/bin/composer)
+run php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+run sudo php composer-setup.php --install-dir=/usr/bin --filename=composer
 ```
 ## Mysql
 ```
