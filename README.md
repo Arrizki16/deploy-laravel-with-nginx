@@ -60,16 +60,20 @@ chown -R www-data:www-data .
 ```
 composer install
 ```
+**Update composer**
+```
+composer update
+```
 **Upgrade composer**
 ```
 
 ```
 ## Mysql
 ```
-mysql -u root -p
-CREATE DATABASE testing;
-CREATE USER 'root'@'%' IDENTIFIED BY 'PASSWORD';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+mysql -u root -p -> default password is null
+CREATE DATABASE nama_database;
+CREATE USER 'nama_user'@'%' IDENTIFIED BY 'PASSWORD';
+GRANT ALL PRIVILEGES ON nama_database.* TO 'nama_user'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 ## Application Environment
