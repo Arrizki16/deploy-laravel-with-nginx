@@ -81,10 +81,9 @@ FLUSH PRIVILEGES;
 ## Application Environment
 ```
 sudo nano /var/www/(your project location)/.env
+or
+cp .env.example .env
 ```
-![Untitled](https://user-images.githubusercontent.com/55046884/120185953-0c4b7f00-c23d-11eb-82bd-cd66bbe5fdc0.png)  
-Actually, you only need to configure the APP and DB configurations. Different configurations will be used for different projects.
-
 ## Nginx
 **Making an nginx configuration**
 ```
