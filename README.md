@@ -20,6 +20,8 @@ nginx firewall permission
 sudo ufw enable
 sudo ufw allow ssh
 sudo ufw allow 'Nginx HTTP'
+sudo ufw allow HTTP
+sudo ufw allow HTTPS
 sudo ufw status
 ```
 install mysql
