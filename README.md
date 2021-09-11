@@ -125,7 +125,14 @@ sudo ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/
 nginx -t
 systemctl reload nginx
 ```
-**SSL**  
+## SSL 
 menggunakan letsencrypt  
 
 ## Some Errors
+**This Page isn't working**  
+![Untitled](https://user-images.githubusercontent.com/55046884/132945936-948a1710-e90b-4d50-b39b-4321d6247b4f.png)  
+solution change storage laravel permission
+```
+sudo chgrp -R www-data storage bootstrap/cache
+sudo chmod -R ug+rwx storage bootstrap/cache
+```
