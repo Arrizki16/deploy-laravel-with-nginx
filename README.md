@@ -49,7 +49,10 @@ sudo apt install php8.0-common php8.0-cli -y
 sudo apt-get install php8.0-mbstring php8.0-xml composer unzip
 sudo apt-get install php8.0-curl php8.0-mysql php8.0-fpm
 ```
-  
+**Cek status**
+```
+service php8.0-fpm status
+```
 ## Composer
 Make your way to your Laravel project's location and change the permissions.  
 ```
