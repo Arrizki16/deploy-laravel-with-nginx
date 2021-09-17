@@ -11,26 +11,26 @@
 * [**Some Errors**](#some-errors)
 
 ## PREREQUISITES
-install nginx
+**install nginx**
 ```
 sudo apt-get install nginx
 ```
-nginx firewall permission
+**nginx firewall permission**
 ```
 sudo ufw enable
 sudo ufw allow ssh
 sudo ufw allow 'Nginx HTTP'
 sudo ufw status
 ```
-install mysql
+**install mysql**
 ```
 sudo apt-get install mysql-server
-mysql_secure_installation
+sudo mysql_secure_installation
 ```
-cek mysql nginx
+**checking mysql and nginx**
 ```
-systemctl status nginx
-systemctl status mysql
+sudo systemctl status nginx
+sudo systemctl status mysql
 ```
 ## PHP
 I use PHP version 8.0 in this chapter because my Laravel project uses PHP version 8.0.As a result, it is dependent on your Laravel project.  
@@ -51,7 +51,7 @@ sudo apt-get install php8.0-curl php8.0-mysql php8.0-fpm
 ```
 **Cek status**
 ```
-service php8.0-fpm status
+sudo service php8.0-fpm status
 ```
 ## Composer
 Make your way to your Laravel project's location and change the permissions.  
@@ -126,7 +126,7 @@ nginx -t
 systemctl reload nginx
 ```
 ## SSL 
-menggunakan letsencrypt  
+using letsencrypt  
 
 ## Some Errors
 **This Page isn't working**  
