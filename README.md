@@ -15,6 +15,14 @@
 ```
 sudo apt-get install nginx
 ```
+**cek status nginx**
+```
+sudo systemctl status nginx
+```
+**start nginx**
+```
+sudo systemctl start nginx
+```
 **nginx firewall permission**
 ```
 sudo ufw enable
@@ -122,8 +130,8 @@ sudo ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/
 ```
 **Running your app**
 ```
-nginx -t
-systemctl reload nginx
+sudo nginx -t
+sudo systemctl reload nginx
 ```
 ## SSL 
 using letsencrypt  
