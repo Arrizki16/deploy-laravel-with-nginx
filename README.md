@@ -1,5 +1,7 @@
 # deploy-laravel-with-nginx
 
+link yt -> https://youtu.be/a0VmEYDmiPY
+
 ## **CONTENTS**
 * [**PREREQUISITES**](#prerequisites)
 * [**PHP**](#php)
@@ -23,7 +25,7 @@ sudo systemctl status nginx
 ```
 sudo systemctl start nginx
 ```
-**nginx firewall permission**
+**firewall permission (optional)**
 ```
 sudo ufw enable
 sudo ufw allow ssh
@@ -64,18 +66,18 @@ sudo service php8.0-fpm status
 ## Composer
 Make your way to your Laravel project's location and change the permissions.  
 ```
-cd /var/www/(your project location)
-chown -R www-data:www-data .
+sudo cd /var/www/(your project location)
+sudo chown -R www-data:www-data .
 ```
 **Install composer**
 ```
 sudo composer install
 ```
-**Update composer**
+**Update composer (optional)**
 ```
 sudo composer update
 ```
-**Upgrade composer**
+**Upgrade composer (optional)**
 ```
 sudo run which composer (output /usr/bin/composer)
 sudo run php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -90,22 +92,31 @@ GRANT ALL PRIVILEGES ON nama_database.* TO 'nama_user'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 ## Application Environment
+**Open .env**
 ```
-sudo nano /var/www/(your project location)/.env
-or
 sudo cp .env.example .env
+sudo nano /var/www/(your project location)/.env
+```
+**Config .env**  
+![Screenshot from 2021-06-01 17-03-21 (2)](https://user-images.githubusercontent.com/55046884/133882603-1993a233-5c45-4e5a-af81-5921b38fa45b.png)  
+config db_database, db_username, db_password and other
+
+**Artisan**
+```
+sudo php artisan key:generate
+sudo php artisan migrate
 ```
 ## Nginx
 **Making an nginx configuration**
 ```
-touch /etc/nginx/sites-available/example.conf
+sudo touch /etc/nginx/sites-available/example.conf
 sudo nano /etc/nginx/sites-available/example.conf
 ```
 **Fill with it**
 ```
 server {
         listen 80;
-        root /var/www/(your project name)/public;
+        root /var/www/html/(your project name)/public;
         index index.php index.html index.htm index.nginx-debian.html;
 
         server_name (depending your server name);
