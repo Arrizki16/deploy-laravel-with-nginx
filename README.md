@@ -61,17 +61,17 @@ chown -R www-data:www-data .
 ```
 **Install composer**
 ```
-composer install
+sudo composer install
 ```
 **Update composer**
 ```
-composer update
+sudo composer update
 ```
 **Upgrade composer**
 ```
-run which composer (output /usr/bin/composer)
-run php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-run sudo php composer-setup.php --install-dir=/usr/bin --filename=composer
+sudo run which composer (output /usr/bin/composer)
+sudo run php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+sudo run sudo php composer-setup.php --install-dir=/usr/bin --filename=composer
 ```
 ## Mysql
 ```
@@ -85,7 +85,7 @@ FLUSH PRIVILEGES;
 ```
 sudo nano /var/www/(your project location)/.env
 or
-cp .env.example .env
+sudo cp .env.example .env
 ```
 ## Nginx
 **Making an nginx configuration**
