@@ -11,6 +11,7 @@ link yt -> https://youtu.be/a0VmEYDmiPY
 * [**Nginx**](#nginx)
 * [**SSL**](#ssl)
 * [**Some Errors**](#some-errors)
+* [**Important Artisan Package**](#important-artisan-package)
 
 ## PREREQUISITES
 **install nginx**
@@ -154,4 +155,10 @@ solution change storage laravel permission
 ```
 sudo chgrp -R www-data storage bootstrap/cache
 sudo chmod -R ug+rwx storage bootstrap/cache
+```
+
+## Important Artisan Package
+```
+php artisan storage:link
+php artisan passport:install --force
 ```
