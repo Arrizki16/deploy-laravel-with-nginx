@@ -31,6 +31,9 @@ sudo systemctl start nginx
 sudo ufw enable
 sudo ufw allow ssh
 sudo ufw allow 'Nginx HTTP'
+sudo ufw allow 443
+sudo ufw allow 80
+sudo ufw allow 22
 sudo ufw status
 ```
 **install mysql**
