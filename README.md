@@ -12,6 +12,7 @@ link yt -> https://youtu.be/a0VmEYDmiPY
 * [**SSL**](#ssl)
 * [**Some Errors**](#some-errors)
 * [**Important Artisan Package**](#important-artisan-package)
+* [**Logs**](#log)
 
 ## PREREQUISITES
 **install nginx**
@@ -176,4 +177,10 @@ sudo chmod -R ug+rwx storage bootstrap/cache
 ```
 php artisan storage:link
 php artisan passport:install --force
+```
+## Logs
+```
+sudo nano /var/log/nginx/stepdal-fe-access.log
+sudo nano /var/log/nginx/stepdal-fe-error.log
+sudo nano /var/www/html/stepdal-backend/storage/logs/laravel.log
 ```
