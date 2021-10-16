@@ -205,5 +205,5 @@ ssh-keygen -t rsa -b 4096 -C [username]
 **connect ssh to server**
 ```
 sudo ssh -i [private key file] [username]@[ip-external]
-ssh -i dekajulian dekajulian@[my-gcp-ip]
+sudo ssh -i /mnt/c/Users/ASUS/.ssh/dekajulian dekajulian@[my-server-ip]
 ```
