@@ -193,12 +193,17 @@ sudo tail -n [number] /var/log/nginx/stepdal-fe-error.log
 sudo tail -n [number] /var/www/html/stepdal-backend/storage/logs/laravel.log
 ```
 ## SSH
+install openssh server
+```
+sudo apt install openssh-server
+sudo systemctl status ssh
+```
 create rsa
 ```
 ssh-keygen -t rsa -b 4096 -C [username]
 ```
 connect ssh to server
 ```
-sudo ssh -i private-key [username]@[ip-external]
+sudo ssh -i [private key file] [username]@[ip-external]
 ssh -i dekajulian dekajulian@[my-gcp-ip]
 ```
