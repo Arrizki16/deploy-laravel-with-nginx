@@ -12,7 +12,7 @@ link yt -> https://youtu.be/a0VmEYDmiPY
 * [**SSL**](#ssl)
 * [**Some Errors**](#some-errors)
 * [**Important Artisan Package**](#important-artisan-package)
-* [**Logs**](#log)
+* [**Logs**](#logs)
 
 ## PREREQUISITES
 **install nginx**
