@@ -103,6 +103,11 @@ FLUSH PRIVILEGES;
 sudo cp .env.example .env
 sudo nano /var/www/(your project location)/.env
 ```
+**Add debug**
+```
+APP_DEBUG=true
+LOG_DEBUG=true
+```
 **Config .env**  
 ![Screenshot from 2021-06-01 17-03-21 (2)](https://user-images.githubusercontent.com/55046884/133882603-1993a233-5c45-4e5a-af81-5921b38fa45b.png)  
 config db_database, db_username, db_password and other
