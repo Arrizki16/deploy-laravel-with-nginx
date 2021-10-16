@@ -13,6 +13,7 @@ link yt -> https://youtu.be/a0VmEYDmiPY
 * [**Some Errors**](#some-errors)
 * [**Important Artisan Package**](#important-artisan-package)
 * [**Logs**](#logs)
+* [**SSH**](#ssh)
 
 ## PREREQUISITES
 **install nginx**
@@ -190,4 +191,14 @@ read newest log
 sudo tail -n [number] /var/log/nginx/stepdal-fe-access.log
 sudo tail -n [number] /var/log/nginx/stepdal-fe-error.log
 sudo tail -n [number] /var/www/html/stepdal-backend/storage/logs/laravel.log
+```
+## SSH
+create rsa
+```
+ssh-keygen -t rsa -b 4096 -C [username]
+```
+connect ssh to server
+```
+sudo ssh -i private-key [username]@[ip-external]
+ssh -i dekajulian dekajulian@[my-gcp-ip]
 ```
