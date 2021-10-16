@@ -179,8 +179,15 @@ php artisan storage:link
 php artisan passport:install --force
 ```
 ## Logs
+read all 
 ```
 sudo nano /var/log/nginx/stepdal-fe-access.log
 sudo nano /var/log/nginx/stepdal-fe-error.log
 sudo nano /var/www/html/stepdal-backend/storage/logs/laravel.log
+```
+read newest log
+```
+sudo tail -n [number] /var/log/nginx/stepdal-fe-access.log
+sudo tail -n [number] /var/log/nginx/stepdal-fe-error.log
+sudo tail -n [number] /var/www/html/stepdal-backend/storage/logs/laravel.log
 ```
