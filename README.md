@@ -149,7 +149,19 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 ## SSL 
-using letsencrypt  
+add package
+```
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+```
+install certbot
+```
+sudo apt-get install python3-certbot-nginx
+```
+obtain SSL for **subdomain**
+```
+certbot -d subdomain.domain.com --manual --preferred-challenges dns certonly
+```
 
 ## Some Errors
 **This Page isn't working**  
