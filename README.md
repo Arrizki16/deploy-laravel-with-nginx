@@ -151,12 +151,12 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 ## SSL 
-add package
+**add package**
 ```
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
 ```
-install certbot
+**install certbot**
 ```
 sudo apt-get install python3-certbot-nginx
 ```
@@ -180,29 +180,29 @@ php artisan storage:link
 php artisan passport:install --force
 ```
 ## Logs
-read all 
+**read all logs**
 ```
 sudo nano /var/log/nginx/stepdal-fe-access.log
 sudo nano /var/log/nginx/stepdal-fe-error.log
 sudo nano /var/www/html/stepdal-backend/storage/logs/laravel.log
 ```
-read newest log
+**read newest logs**
 ```
 sudo tail -n [number] /var/log/nginx/stepdal-fe-access.log
 sudo tail -n [number] /var/log/nginx/stepdal-fe-error.log
 sudo tail -n [number] /var/www/html/stepdal-backend/storage/logs/laravel.log
 ```
 ## SSH
-install openssh server
+**install openssh server**
 ```
 sudo apt install openssh-server
 sudo systemctl status ssh
 ```
-create rsa
+**create rsa**
 ```
 ssh-keygen -t rsa -b 4096 -C [username]
 ```
-connect ssh to server
+**connect ssh to server**
 ```
 sudo ssh -i [private key file] [username]@[ip-external]
 ssh -i dekajulian dekajulian@[my-gcp-ip]
