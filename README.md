@@ -18,7 +18,7 @@ link yt -> https://youtu.be/a0VmEYDmiPY
 ## PREREQUISITES
 **install nginx**
 ```
-sudo apt-get install nginx
+sudo apt-get install nginx -y
 ```
 **cek status nginx**
 ```
@@ -40,8 +40,8 @@ sudo ufw status
 ```
 **install mysql**
 ```
-sudo apt-get install mysql-server
-sudo mysql_secure_installation
+sudo apt-get install mysql-server -y
+sudo mysql_secure_installation -y
 ```
 **checking mysql and nginx**
 ```
@@ -52,8 +52,8 @@ sudo systemctl status mysql
 I use PHP version 8.0 in this chapter because my Laravel project uses PHP version 8.0.As a result, it is dependent on your Laravel project.  
 **Add odrej/php PPA**  
 ```
-sudo apt install  ca-certificates apt-transport-https software-properties-common
-sudo add-apt-repository ppa:ondrej/php
+sudo apt install  ca-certificates apt-transport-https software-properties-common -y
+sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update
 ```
 **Install php8.0**
@@ -62,8 +62,8 @@ sudo apt install php8.0-common php8.0-cli -y
 ```
 **Install dependencies package**
 ```
-sudo apt-get install php8.0-mbstring php8.0-xml composer unzip
-sudo apt-get install php8.0-curl php8.0-mysql php8.0-fpm
+sudo apt-get install php8.0-mbstring php8.0-xml composer unzip -y
+sudo apt-get install php8.0-curl php8.0-mysql php8.0-fpm -y
 ```
 **Cek status**
 ```
