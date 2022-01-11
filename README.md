@@ -169,6 +169,11 @@ obtain SSL for **subdomain**
 ```
 certbot -d subdomain.domain.com --manual --preferred-challenges dns certonly
 ```
+**update ssl via cpanel**
+```
+certbot certonly --manual -d [domain]
+```
+link youtube : https://youtu.be/QtH0um4dRxA
 
 ## Some Errors
 **This Page isn't working**  
