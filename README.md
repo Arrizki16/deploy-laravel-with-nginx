@@ -219,17 +219,17 @@ sudo ssh -i [private key file] [username]@[ip-external]
 sudo ssh -i /mnt/c/Users/ASUS/.ssh/dekajulian dekajulian@[my-server-ip]
 ```
 ## Clone Via SSH
-**create ed25519
+**create ed25519**
 ```
 ssh-keygen -t ed25519 -C "kamildeka123@gmail.com"
 ```
-**cat ed25519 public and copy to github ssh key
-**eval agent
+**cat ed25519 public and copy to github ssh key**
+**eval agent**
 ```
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/[file ed25519 public]
 ```
-**setting permission
+**setting permission**
 ```
 sudo chmod 777 [path directory]
 ```
